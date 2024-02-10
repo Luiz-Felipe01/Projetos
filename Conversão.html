@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>O Conversor</title>
+		<style>
+			th,td{
+			padding:5px;
+			border:1px solid black;
+			}
+			a{
+			text-decoration:none;
+			color:green;
+			}
+			p{
+			font-size:1vw;
+			}
+			.horizontal {
+			display: inline;
+			} 
+			header {
+			background-color:green;
+			border:7px solid gray;
+			font-size:3vw;
+			}
+			.title {
+			text-align:center;
+			font-size:2vw;
+			}
+			.table {
+			border:2px solid black;
+			border-collapse:collapse;
+			font-size:1vw;
+			}
+			section {
+			border:2px solid black;
+			background-color:pink;
+			width:40%;
+			margin-left:40px;
+			margin-top:40px;
+			border-width:3px;
+			border-radius:25px;
+			padding:10px;
+			font-family:arial;
+			}
+			footer{
+			background-color:red;
+			font-size:2vw;
+			border:4px solid gray;
+			margin-top:90px;
+			}
+			aside {
+			border:3px solid gray;
+			background-color:pink;
+			width:40%;
+			margin-left:40px;
+			margin-top:40px;
+			border-width:3px;
+			border-radius:25px;
+			padding:10px;
+			float:right;
+			font-size:1vw;
+			}
+			nav {
+			font-size:2vw;
+			background-color:lightblue;
+			border:8px solid gray;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;color:white;">O Conversor</h1>
+		</header>
+		<nav>
+			<ul style="list-style-type:none;text-align:center;">
+				<li class="horizontal" style="margin:150px;margin-left:7px"><a href="O Conversor.html">Página Inicial</a></li>
+				<li class="horizontal" style="margin:50px;"><a href="Conversão.html">Conversão</a></li>
+				<li class="horizontal" style="margin:50px;"><a href="Informações.html">Informações</a></li>
+			</ul>
+		</nav>
+		<aside>
+			<ul>
+			<li><a href="O Conversor.html">Voltar ao Início</a></li>
+				<li>Tabelas de Valores</li>
+				<li>Deseja saber mais sobre as formas de conversão?
+				Clique <a href="Informações.html">aqui.</a></li>
+			</ul>
+				<p>Esta página foi feita com ajuda de <a href="https://www.w3schools.com/">w3schools.com</a></p>
+		</aside>
+		<article>
+		<section>
+			<h1 class="title">Conversão de Temperaturas</h1>
+			<form>
+				<input id="inputCelsius" type="number" placeholder="Temperatura em Celsius"
+				oninput="temperatureConverter(this.value)"
+				onchange="temperatureConverter(this.value)">
+			</form>
+			<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+			<p>Kelvin: <span id="outputKelvin"></span></p>
+			<script>
+				function temperatureConverter(valNum){
+					let valNum2;
+					valNum=parseFloat(valNum);
+					valNum2=valNum;
+					document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+					document.getElementById("outputKelvin").innerHTML=valNum2+273;
+				}
+			</script>
+			</section>
+		<section>
+			<h1 class="title">Conversão de Unidades de Medida</h1>
+			<form>
+				<input id="inputMetros" type="number" placeholder="Comprimento em metros"
+				oninput="comprimentoConverter(this.value)"
+				onchange="comprimentoConverter(this.value)">
+			</form>
+			<p>Centímetros: <span id="outputCentimetro"></span></p>
+			<p>Quilômetros: <span id="outputQuilometro"></span></p>
+			<p>Milímetros: <span id="outputMilimetro"></span></p>
+			<script>
+				function comprimentoConverter(n)
+				{
+					n=parseFloat(n);
+					document.getElementById("outputCentimetro").innerHTML=n*100;
+					document.getElementById("outputQuilometro").innerHTML=n*0.001;
+					document.getElementById("outputMilimetro").innerHTML=n*1000;
+				}
+			</script>
+		</section>
+		</article>
+		<footer>
+			<ul style="text-align:center">
+				<li class="horizontal" style="margin:30px;">O Conversor</li>
+				<li class="horizontal" style="margin:30px;">Criado por Luiz Felipe Nunes</li>
+				<li class="horizontal" style="margin:30px;">Email para contato: emaillf2001@gmail.com</li>
+			</ul>
+		</footer>
+	<body>
+</html>

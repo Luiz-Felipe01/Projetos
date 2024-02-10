@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>O Conversor</title>
+		<style>
+			th,td{
+			padding:5px;
+			border:1px solid black;
+			}
+			a{
+			text-decoration:none;
+			color:green;
+			}
+			p{
+			font-size:1vw;
+			}
+			.horizontal {
+			display: inline;
+			} 
+			header {
+			background-color:green;
+			border:7px solid gray;
+			font-size:3vw;
+			}
+			.title {
+			text-align:center;
+			font-size:2vw;
+			}
+			.table {
+			border:2px solid black;
+			border-collapse:collapse;
+			font-size:1vw;
+			}
+			section {
+			border:2px solid red;
+			background-color:lightblue;
+			width:40%;
+			margin-left:40px;
+			margin-top:40px;
+			border-width:3px;
+			border-radius:25px;
+			padding:10px;
+			}
+			footer{
+			background-color:red;
+			font-size:2vw;
+			border:4px solid gray;
+			margin-top:90px;
+			}
+			aside {
+			border:3px solid gray;
+			background-color:pink;
+			width:40%;
+			margin-left:40px;
+			margin-top:40px;
+			border-width:3px;
+			border-radius:25px;
+			padding:10px;
+			float:right;
+			font-size:1vw;
+			}
+			nav {
+			font-size:2vw;
+			background-color:lightblue;
+			border:8px solid gray;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;color:white;">O Conversor</h1>
+		</header>
+		<nav>
+			<ul style="list-style-type:none;text-align:center;">
+				<li class="horizontal" style="margin:150px;margin-left:7px"><a href="O Conversor.html">Página Inicial</a></li>
+				<li class="horizontal" style="margin:50px;"><a href="Conversão.html">Conversão</a></li>
+				<li class="horizontal" style="margin:50px;"><a href="Informações.html">Informações</a></li>
+			</ul>
+		</nav>
+		<aside>
+			<ul>
+				<li><a href="O Conversor.html">Voltar ao Início</a></li>
+				<li>Tabelas de Valores</li>
+				<li>Deseja saber mais sobre as formas de conversão?
+				Clique <a href="Informações.html">aqui.</a></li>
+			</ul>
+				<p>Esta página foi feita com ajuda de <a href="https://www.w3schools.com/">w3schools.com</a></p>
+			</aside>
+		<article>
+			<section>
+			<h2 class="title">Tabelas</h2>
+				<p style="margin:10px;border:2px solid black;text-align:center;border-radius:11px;">Tabela de escalas de temperatura:</p>
+			<table class ="table">
+					<tr>
+						<th>Temperatura em Celsius</th>
+						<th>Temperatura em Fahrenheit</th>
+						<th>Temperatura em Kelvin</th>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>32</td>
+						<td>273,15</td>
+					</tr>
+					<tr>
+						<td>-10</td>
+						<td>14</td>
+						<td>263,15</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>212</td>
+						<td>373,15</td>
+					</tr>
+					<table>
+					<p style="margin:10px;border:2px solid black;text-align:center;border-radius:11px;">Tabela de fórmulas de conversão de temperatura:</p>
+					<table class ="table">
+					<tr>
+						<th>De -> Para</th>
+						<th>Fórmula</th>
+					</tr>
+					<tr>
+						<td>Kelvin -> Celsius</td>
+						<td>C = K - 273</td>
+					</tr>
+					<tr>
+						<td>Kelvin -> Fahrenheit</td>
+						<td>(K - 273) x 1,8 + 32</td>
+					</tr>
+					<tr>
+						<td>Celsius -> Kelvin</td>
+						<td>K = C + 273</td>
+					</tr>
+					<tr>
+						<td>Celsius -> Fahrenheit</td>
+						<td>F = C X 1,8 + 32</td>
+					</tr>
+					<tr>
+						<td>Fahrenheit -> Celsius</td>
+						<td>C = (F - 32) / 1,8</td>
+					</tr>
+					<tr>
+						<td>Fahrenheit -> Kelvin</td>
+						<td>K = (F - 32) x 5/9 + 273</td>
+					</tr>
+					</table>
+				<p style="margin:10px;border:2px solid black;text-align:center;border-radius:11px;">Tabela completa de medidas de comprimento:</p>
+			<table class ="table">
+					<tr>
+						<th>KM</th>
+						<th>hm</th>
+						<th>dam</th>
+						<th>m</th>
+						<th>dm</th>
+						<th>cm</th>
+						<th>mm</th>
+					</tr>
+					<tr>
+						<td>1000</td>
+						<td>100</td>
+						<td>10</td>
+						<td>1</td>
+						<td>0,1</td>
+						<td>0.01</td>
+						<td>0,001</td>
+					</tr>
+				</table>
+			</section>
+			<section style="width:42%;">
+				<h2 class="title">Vídeos</h2>
+					<p style="border:4px dashed black;text-align:center;">"Conversão de escalas termométricas"</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Mi4D_1RTRDo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<br>
+					<p style="border:4px dashed black;text-align:center;">"Fácil e rápido:medidas de comprimento"</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/AEq9ykJkR2U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</section>
+		<article>
+		<footer>
+			<ul style="text-align:center">
+				<li class="horizontal" style="margin:30px;">O Conversor</li>
+				<li class="horizontal" style="margin:30px;">Criado por Luiz Felipe Nunes</li>
+				<li class="horizontal" style="margin:30px;">Email para contato: emaillf2001@gmail.com</li>
+			</ul>
+		</footer>
+	<body>
+</html>
